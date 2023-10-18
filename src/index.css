@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+/* Tùy chỉnh thanh cuộn */
+html *::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+html *::-ms-scrollbar {
+  width: 0;
+  height: 0;
+}
