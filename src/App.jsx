@@ -76,7 +76,7 @@ function App() {
     <div className="flex flex-col items-center">
       <audio ref={audioRef} id="myAudio" src={UntilIFoundU}></audio>
 
-      <div className=" text-[#6e8058] bg-[#efeeea] h-auto sm:w-[480px] md:w-[480px] lg:w-[480px] ">
+      <div className=" text-[#6e8058] bg-[#efeeea33] h-auto sm:w-[480px] md:w-[480px] lg:w-[480px] ">
         <img src={main1} alt="" />
 
         {/* about us */}
@@ -606,21 +606,21 @@ function App() {
           <h3 className="py-4 text-2xl">Thông tin liên hệ</h3>
           <img className="mt-2" src={footer2} alt="" />
           <div className="grid grid-cols-2">
-            <a href="  tel:098372082">
+            <a href="  tel:098372082" className="relative">
               <img
                 className="cursor-pointer mt-2 hover:animate-pulse"
                 src={contact1}
                 alt=""
               />
-              <p>098372082</p>
+              <p className="absolute bottom-2 right-0 left-3">098372082</p>
             </a>
-            <a href="  tel:098372082">
+            <a href="  tel:098372082" className="relative">
               <img
                 className="cursor-pointer mt-2 hover:animate-pulse"
                 src={contact2}
                 alt=""
               />
-              <p>0983732082</p>
+              <p className="absolute bottom-2 left-0 right-6">0983732082</p>
             </a>
           </div>
         </div>
