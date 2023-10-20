@@ -21,6 +21,7 @@ import {
   sl1,
   sl2,
   sl3,
+  sl4,
   map,
   contact1,
   contact2,
@@ -116,7 +117,7 @@ function App() {
             </div>
             <div className="grid grid-cols-2 ">
               <img
-                className="relative left-10 rounded-md shadow-md shadow-slate-400 rotate-[-14deg] w-[56%] h-auto"
+                className="relative left-10 rounded-md shadow-md shadow-slate-400 rotate-[-14deg] w-[56%] h-[70%] object-cover"
                 src={manInfo}
                 alt=""
               />
@@ -142,14 +143,14 @@ function App() {
               <img className="w-[20%] h-auto" src={heart} alt="" />
               <img className="w-[20%] h-auto" src={arrow} alt="" />
             </div>
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-2 pb-6">
               <div className="flex flex-col justify-center items-center">
                 <p>Khánh An</p>
                 <p>20.03</p>
                 <img className="w-[20%] h-auto" src={girl} alt="" />
               </div>
               <img
-                className="relative left-8 top-6 rounded-md shadow-md shadow-slate-400 rotate-[14deg] w-[56%] h-auto"
+                className="relative left-8 top-6 rounded-md shadow-md shadow-slate-400 rotate-[14deg] w-[56%] h-[70%] object-cover"
                 src={girlInfo}
                 alt=""
               />
@@ -173,7 +174,7 @@ function App() {
                 <img className="w-[60%] h-auto" src={arrow} alt="" />
               </div>
               <img
-                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-auto"
+                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-[70%] object-cover"
                 src={LS1}
                 alt=""
               />
@@ -192,7 +193,7 @@ function App() {
           <div>
             <div className="grid grid-cols-2 mt-10 mb-6">
               <img
-                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-auto"
+                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-[70%] object-cover"
                 src={LS2}
                 alt=""
               />
@@ -221,7 +222,7 @@ function App() {
                 <img className="w-[60%] h-auto" src={arrow} alt="" />
               </div>
               <img
-                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-auto"
+                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-[70%] object-cover"
                 src={LS3}
                 alt=""
               />
@@ -241,7 +242,7 @@ function App() {
           <div>
             <div className="grid grid-cols-2 mt-10 mb-4">
               <img
-                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-auto"
+                className="relative left-4 top-6 rounded-md shadow-md shadow-slate-400 rotate-[4deg] w-[80%] h-[70%] object-cover"
                 src={LS4}
                 alt=""
               />
@@ -302,7 +303,7 @@ function App() {
               <img
                 id=" slide"
                 className="w-full h-auto object-cover rounded "
-                src={sl2}
+                src={sl4}
                 alt=""
               />
             </div>
