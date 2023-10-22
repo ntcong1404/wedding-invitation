@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 const CountdownTimer = () => {
-  const eventDate = new Date("2023-10-31T08:00:00"); // Ngày giờ sự kiện
-  const eventEndDate = new Date("2023-10-31T11:00:00"); // Ngày giờ sự kiện
+  const eventDate = new Date("2023-10-30T08:00:00"); // Ngày giờ sự kiện
+  const eventEndDate = new Date("2023-10-30T11:00:00"); // Ngày giờ sự kiện
 
   const [countdownD, setCountdownD] = useState("");
   const [countdownH, setCountdownH] = useState("");

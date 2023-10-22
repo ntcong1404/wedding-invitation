@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import {
   man,
   main1,
@@ -64,16 +66,6 @@ function App() {
   const handleSelectChange = (event) => {
     const selectedOption = event.target.value;
     setShowInput(selectedOption === "Đi chung");
-  };
-
-  const slideLeft = () => {
-    const container = document.getElementsByClassName("slide")[0];
-    container.scrollLeft -= container.offsetWidth;
-  };
-
-  const slideRight = () => {
-    const container = document.getElementsByClassName("slide")[0];
-    container.scrollLeft += container.offsetWidth;
   };
 
   const handleSubmit = (e) => {
@@ -268,58 +260,39 @@ function App() {
         {/* photo */}
         <div className="my-16 px-2 text-center">
           <h3 className="my-6 text-2xl">Photo Gallery</h3>
-          <div className="relative group">
-            <div
-              onClick={slideLeft}
-              className="absolute left-[6px] top-1/2 translate-y-[-50%] text-lg p-2 cursor-pointer group-hover:scale-125"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 320 512"
-              >
-                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-              </svg>
-            </div>
-            <div className="flex overflow-x-scroll scroll-smooth slide">
-              <img
-                id=" slide"
-                className="w-full h-auto object-cover rounded "
-                src={sl1}
-                alt=""
-              />
-              <img
-                id=" slide"
-                className="w-full h-auto object-cover rounded "
-                src={sl2}
-                alt=""
-              />
-              <img
-                id=" slide"
-                className="w-full h-auto object-cover rounded "
-                src={sl3}
-                alt=""
-              />
-              <img
-                id=" slide"
-                className="w-full h-auto object-cover rounded "
-                src={sl4}
-                alt=""
-              />
-            </div>
-            <div
-              onClick={slideRight}
-              className="absolute right-[6px] top-1/2 translate-y-[-50%] text-lg p-2 cursor-pointer group-hover:scale-125"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 320 512"
-              >
-                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-              </svg>
-            </div>
-          </div>
+
+          <Carousel
+            autoPlay
+            infiniteLoop
+            stopOnHover
+            emulateTouch
+            showThumbs={false}
+          >
+            <img
+              id=" slide"
+              className="w-full h-auto object-cover rounded "
+              src={sl1}
+              alt=""
+            />
+            <img
+              id=" slide"
+              className="w-full h-auto object-cover rounded "
+              src={sl4}
+              alt=""
+            />
+            <img
+              id=" slide"
+              className="w-full h-auto object-cover rounded "
+              src={sl3}
+              alt=""
+            />
+            <img
+              id=" slide"
+              className="w-full h-auto object-cover rounded "
+              src={sl4}
+              alt=""
+            />
+          </Carousel>
         </div>
         <img src={main3} alt="" />
 
