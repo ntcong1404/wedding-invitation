@@ -24,7 +24,6 @@ import {
   sl2,
   sl3,
   sl4,
-  map,
   contact1,
   contact2,
   LS1,
@@ -34,6 +33,7 @@ import {
   UntilIFoundU,
 } from "./assets/index";
 import CountdownTimer from "./calendar";
+import Map from "./map";
 
 function App() {
   const [select, setSelect] = useState("Khách nhà gái");
@@ -666,9 +666,8 @@ function App() {
           </div>
         </div>
         {/* map */}
-        <div className="my-10 px-6 text-center">
-          <h3 className="py-4 text-2xl">Địa điểm tổ chức</h3>
-          <img className="my-4 rounded" src={map} alt="" />
+        <div>
+          <Map />
         </div>
         {/* contact */}
         <div className="my-10 px-6 text-center">

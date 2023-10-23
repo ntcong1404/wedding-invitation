@@ -20,7 +20,6 @@ import sl2 from "./sl2.png";
 import sl3 from "./sl3.png";
 import sl4 from "./sl4.png";
 import bgInf from "./bgInf.png";
-import map from "./map.png";
 import contact1 from "./contact1.jpg";
 import contact2 from "./contact2.jpg";
 import LS1 from "./LS1.png";
@@ -53,7 +52,6 @@ export {
   sl2,
   sl3,
   sl4,
-  map,
   contact1,
   contact2,
   LS1,
